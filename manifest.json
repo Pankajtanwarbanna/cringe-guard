@@ -2,16 +2,21 @@
     "manifest_version": 3,
     "name": "Cringe Guard: filter out cringe content on your LinkedIn feed using AI",
     "author": "Pankaj Tanwar",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "A chrome extension that filters out cringe content (engagement click-bait, promotional content, and low-value off-topic posts etc) on your LinkedIn feed. It uses AI to analyse LinkedIn posts in real time and hides cringe worthy content.",
     "content_scripts": [
         {
             "js": [
+                "scripts/config.js",
+                "scripts/utils.js",
+                "scripts/api.js",
+                "scripts/ui.js",
                 "scripts/content.js"
             ],
             "matches": [
                 "https://www.linkedin.com/feed/*"
-            ]
+            ],
+            "type": "module"
         }
     ],
     "icons": {
@@ -28,5 +33,11 @@
     "permissions": [
         "activeTab",
         "storage"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["scripts/*.js"],
+            "matches": ["https://www.linkedin.com/*"]
+        }
     ]
 }
