@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,19 +92,15 @@
             margin-bottom: 8px;
         }
 
-
         .api-key-section input {
             flex: 1;
-            /* Makes the input take up remaining space */
             padding: 10px;
             border: 1px solid #e5e7eb;
             border-radius: 8px;
             font-size: 14px;
             color: #1f2937;
             width: 100%;
-            /* Ensures input doesn't overflow */
             box-sizing: border-box;
-            /* Ensures padding is included in width */
         }
 
         .api-key-section button {
@@ -123,6 +118,11 @@
 
         .api-key-section button:hover {
             background: #005f8a;
+        }
+
+        .api-key-section button:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
         }
 
         .instructions {
@@ -171,18 +171,8 @@
             color: #003f5e;
             text-decoration: underline;
         }
-
-        .success-message {
-            font-size: 14px;
-            color: #0077b5;
-            margin-top: 8px;
-            font-weight: 500;
-            display: none;
-            transition: opacity 0.3s ease-in-out;
-        }
     </style>
 </head>
-
 <body>
     <div class="container">
         <div class="header">
@@ -216,7 +206,7 @@
                 <label for="api-key">Enter your Groq API Key:</label>
                 <div class="input-group">
                     <input type="text" id="api-key" placeholder="Your Groq API Key">
-                    <button id="save-button">Save</button>
+                    <button id="save-button" disabled>Save</button>
                 </div>
             </div>
         </div>
@@ -232,7 +222,6 @@
         </div>
     </div>
 
-    <script src="./../scripts/settings.js"></script>
+    <script type="module" src="./../scripts/settings.js"></script>
 </body>
-
 </html>
