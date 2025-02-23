@@ -31,7 +31,6 @@
     },
     "options_page": "./pages/settings.html",
     "permissions": [
-        "activeTab",
         "storage"
     ],
     "web_accessible_resources": [
