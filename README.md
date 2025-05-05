@@ -1,6 +1,6 @@
 # cringe-guard 📵
 
-Control your LinkedIn feed with an LLM of your choice. A chrome extension that filters out cringe content (engagement click-bait, promotional content, and low-value off-topic posts etc) on your LinkedIn feed. It uses AI to analyse LinkedIn posts in real time and hides cringe worthy content.
+Control your LinkedIn and X/Twiiter feed with an LLM of your choice. A chrome extension that filters out cringe content (engagement click-bait, promotional content, and low-value off-topic posts etc) on your LinkedIn and X/Twitter feed. It uses AI to analyse LinkedIn and X posts in real time and hides cringe worthy content.
 
 This prototype demonstrates how AI can empower us to have more control over the content we consume.
 
